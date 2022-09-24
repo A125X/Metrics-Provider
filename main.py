@@ -33,7 +33,7 @@ class MetricsProvider:
 
     
 
-class MetrixPrinter:
+class MetricsPrinter:
     def __init__(self):
         pass
 
@@ -58,8 +58,8 @@ def main()->int:
     true_negative: int = 900
     confusion: list = [true_positive, false_positive, false_negative, true_negative]
 
-    metrixPrinter: MetrixPrinter = MetrixPrinter()
-    metrixPrinter.print_all_metrix(confusion)
+    metricsPrinter: MetricsPrinter = MetricsPrinter()
+    metricsPrinter.print_all_metrix(confusion)
 
     true_positive: int = 1
     false_positive: int = 1
@@ -67,7 +67,7 @@ def main()->int:
     true_negative: int = 998
     confusion: list = [true_positive, false_positive, false_negative, true_negative]
 
-    metrixPrinter.print_all_metrix(confusion)
+    metricsPrinter.print_all_metrix(confusion)
 
     return 0
 
